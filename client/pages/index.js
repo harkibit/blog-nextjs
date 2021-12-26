@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import moment from "moment";
 import styles from "../styles/Home.module.css";
+import Posts from "./posts";
 
 export default function Home({ posts }) {
   return (
@@ -11,19 +11,7 @@ export default function Home({ posts }) {
         <meta name="description" content="Hiba Abdel Karim's blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        {posts &&
-          posts?.data.map((post) => {
-            return (
-              <div key={post.id}>
-                <div>
-                  {moment(post.attributes.createdAt).format("D MMMM YYYY")}
-                </div>
-                <h1>{post.attributes.Title}</h1>
-              </div>
-            );
-          })}
-      </div>
+      <Posts posts={posts} />
     </div>
   );
 }

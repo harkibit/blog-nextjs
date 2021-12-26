@@ -1,0 +1,11 @@
+.container {
+  margin: 1rem 0 3rem 0;
+}
+.date {
+  color: rgb(117, 117, 117);
+  font-size: 0.9rem;
+}
+.title {
+  padding: 0;
+  font-size: 4rem !important;
+}
