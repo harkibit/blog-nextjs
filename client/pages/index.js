@@ -8,19 +8,19 @@ import { FiLinkedin, FiGithub, FiTwitter } from "react-icons/fi";
 export default function Home({ posts }) {
   return (
     <div className={styles.container}>
-      <Head>
+      <Head data-scroll="0">
         <title>Hiba's Blog</title>
         <meta name="description" content="Hiba Abdel Karim's blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <navbar className={styles.navbarContainer}>
+      <nav className={styles.navbarContainer}>
         <ul className={styles.navbarUl}>
           <li></li>
-          <li>Blog</li>
+          <li className={styles.logo}>Next blog</li>
           <li>Search</li>
         </ul>
-      </navbar>
+      </nav>
 
       <div className={styles.body}>
         <div className={styles.sidebar}>
